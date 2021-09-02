@@ -15,16 +15,16 @@ int main() {
 	Node* newNode = NULL;
 	int readData;
 
-	// µ¥ÀÌÅÍ ÀÔ·Â °úÁ¤ 
+	// ë°ì´í„° ì…ë ¥ ê³¼ì • 
 
-	while (1) {											// ¹«ÇÑ ·çÇÁ·Î À¥»çÀÌÆ®¿¡¼­ µ¹·ÈÀ» ¶§, ¿À·ù ¹ß»ı
-		printf("ÀÚ¿¬¼ö ÀÔ·Â: ");
+	while (1) {											// ë¬´í•œ ë£¨í”„ë¡œ ì›¹ì‚¬ì´íŠ¸ì—ì„œ ëŒë ¸ì„ ë•Œ, ì˜¤ë¥˜ ë°œìƒ
+		printf("ìì—°ìˆ˜ ì…ë ¥: ");
 		scanf("%d", &readData);
 		
 		if (readData < 1)
 			break;
 
-		// ³ëµå Ãß°¡ °úÁ¤
+		// ë…¸ë“œ ì¶”ê°€ ê³¼ì •
 
 		newNode = (Node*)malloc(sizeof(Node));
 		newNode->data = readData;
@@ -39,24 +39,24 @@ int main() {
 	}
 	printf("\n");
 
-	// ÀÔ·Â ¹ŞÀº µ¥ÀÌÅÍÀÇ Ãâ·Â °úÁ¤ 
-	printf("ÀÔ·Â ¹ŞÀº µ¥ÀÌÅÍÀÇ ÀüÃ¼ Ãâ·Â! \n");
+	// ì…ë ¥ ë°›ì€ ë°ì´í„°ì˜ ì¶œë ¥ ê³¼ì • 
+	printf("ì…ë ¥ ë°›ì€ ë°ì´í„°ì˜ ì „ì²´ ì¶œë ¥! \n");
 
 	if (head == NULL) {
-		printf("ÀúÀåµÈ ÀÚ¿¬¼ö°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù. \n");
+		printf("ì €ì¥ëœ ìì—°ìˆ˜ê°€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤. \n");
 	}
 	else {
 		cur = head;
-		printf("%d ", cur->data);		// first µ¥ÀÌÅÍ Ãâ·Â
+		printf("%d ", cur->data);		// first ë°ì´í„° ì¶œë ¥
 
-		while (cur->next != NULL) {		// Second ÀÌÈÄÀÇ µ¥ÀÌÅÍ Ãâ·Â °úÁ¤ 
+		while (cur->next != NULL) {		// Second ì´í›„ì˜ ë°ì´í„° ì¶œë ¥ ê³¼ì • 
 			cur = cur->next;
 			printf("%d ", cur->data);
 		}
 	}
 	printf("\n\n");
 
-	//¸Ş¸ğ¸® ÇØÁ¦ °úÁ¤
+	//ë©”ëª¨ë¦¬ í•´ì œ ê³¼ì •
 
 	if (head == NULL) {
 		return 0;
@@ -65,14 +65,14 @@ int main() {
 		Node* delNode = head;
 		Node* delNextNode = head->next;
 
-		printf("%d »èÁ¦ÇÕ´Ï´Ù. \n", head->data);
-		free(delNode);		// first node »èÁ¦
+		printf("%d ì‚­ì œí•©ë‹ˆë‹¤. \n", head->data);
+		free(delNode);		// first node ì‚­ì œ
 
 		while (delNextNode != NULL) {
 			delNode = delNextNode;
 			delNextNode = delNextNode->next;
 
-			printf("%d »èÁ¦ÇÕ´Ï´Ù. \n", delNode->data);
+			printf("%d ì‚­ì œí•©ë‹ˆë‹¤. \n", delNode->data);
 			free(delNode);
 		}
 	}
@@ -82,9 +82,9 @@ int main() {
 
 /*
 
-[½ÇÇà °á°ú]
+[ì‹¤í–‰ ê²°ê³¼]
 
 
-[ÄÚµå ºĞ¼®]
+[ì½”ë“œ ë¶„ì„]
 
 */
