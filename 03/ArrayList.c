@@ -1,5 +1,5 @@
 #include <stdio.h>
-# include "03_ArrayList.h"
+# include "ArrayList.h"
 
 void ListInit(List* plist) {
 	(plist->numOfData) = 0;
