@@ -27,8 +27,8 @@ void Enqueue(Queue* pq, Data data) {
 		pq->rear = newNode;
 	}
 	else {
-		pq->rear->next = newNode; // ±âÁ¸ ³ëµåÀÇ ´ÙÀ½À¸·Î »õ·Î¿î ³ëµå Ãß°¡
-		pq->rear = newNode; // rear°¡ »õ ³ëµå¸¦ °¡¸®Å°µµ·Ï ÇÑ´Ù. 
+		pq->rear->next = newNode; // ê¸°ì¡´ ë…¸ë“œì˜ ë‹¤ìŒìœ¼ë¡œ ìƒˆë¡œìš´ ë…¸ë“œ ì¶”ê°€
+		pq->rear = newNode; // rearê°€ ìƒˆ ë…¸ë“œë¥¼ ê°€ë¦¬í‚¤ë„ë¡ í•œë‹¤. 
 	}
 }
 
