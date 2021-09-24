@@ -26,18 +26,18 @@ int main() {
 
 	idx = InterpolSearch(arr, 0, sizeof(arr) / sizeof(int) - 1, 7);
 	if (idx == -1) {
-		printf("Å½»ö ½ÇÆĞ \n");
+		printf("íƒìƒ‰ ì‹¤íŒ¨ \n");
 	}
 	else {
-		printf("Å¸°Ù ÀúÀå ÀÎµ¦½º: %d \n", idx);
+		printf("íƒ€ê²Ÿ ì €ì¥ ì¸ë±ìŠ¤: %d \n", idx);
 	}
 
 	idx = InterpolSearch(arr, 0, sizeof(arr) / sizeof(int) - 1, 2);
 	if (idx == -1) {
-		printf("Å½»ö ½ÇÆĞ \n");
+		printf("íƒìƒ‰ ì‹¤íŒ¨ \n");
 	}
 	else {
-		printf("Å¸°Ù ÀúÀå ÀÎµ¦½º: %d \n", idx);
+		printf("íƒ€ê²Ÿ ì €ì¥ ì¸ë±ìŠ¤: %d \n", idx);
 	}
 
 	return 0;
@@ -47,7 +47,7 @@ int main() {
 
 [Output]
 
-Å¸°Ù ÀúÀå ÀÎµ¦½º: 3
-Å½»ö ½ÇÆĞ
+íƒ€ê²Ÿ ì €ì¥ ì¸ë±ìŠ¤: 3
+íƒìƒ‰ ì‹¤íŒ¨
 
 */
