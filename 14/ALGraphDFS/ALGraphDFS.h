@@ -10,7 +10,7 @@ typedef struct _ual
 	int numV;  
 	int numE;  
 	List* adjList;   
-	int* visitInfo;   // ±×·¡ÇÁ¿Í ´Ş¸® Ãß°¡µÈ ¹æ¹® Á¤º¸! 
+	int* visitInfo;   // ê·¸ë˜í”„ì™€ ë‹¬ë¦¬ ì¶”ê°€ëœ ë°©ë¬¸ ì •ë³´! 
 } ALGraph;
 
 void GraphInit(ALGraph* pg, int nv);
