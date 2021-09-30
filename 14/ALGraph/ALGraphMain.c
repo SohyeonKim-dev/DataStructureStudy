@@ -3,7 +3,7 @@
 
 int main() {
 	ALGraph graph;
-	GraphInit(&graph, 5); // 2ë²ˆì§¸ parameterë¡œ vertex ìˆ˜ ì „ë‹¬
+	GraphInit(&graph, 5); // 2¹øÂ° parameter·Î vertex ¼ö Àü´Ş
 
 	AddEdge(&graph, A, B);
 	AddEdge(&graph, A, D);
@@ -23,11 +23,11 @@ int main() {
 
 [Output]
 
-Aì™€ ì—°ê²°ëœ ì •ì : B D E
-Bì™€ ì—°ê²°ëœ ì •ì : A C
-Cì™€ ì—°ê²°ëœ ì •ì : B D
-Dì™€ ì—°ê²°ëœ ì •ì : A C E
-Eì™€ ì—°ê²°ëœ ì •ì : A D
+A¿Í ¿¬°áµÈ Á¤Á¡: B D E
+B¿Í ¿¬°áµÈ Á¤Á¡: A C
+C¿Í ¿¬°áµÈ Á¤Á¡: B D
+D¿Í ¿¬°áµÈ Á¤Á¡: A C E
+E¿Í ¿¬°áµÈ Á¤Á¡: A D
 
 
 */
