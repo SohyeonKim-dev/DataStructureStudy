@@ -8,7 +8,7 @@ enum { A, B, C, D, E, F, G, H, I, J };
 typedef struct _ual {
 	int numV;  
 	int numE;  
-	List* adjList;   // ÀÌÁß ¿¬°á ¸®½ºÆ®¸¦ °£¼± Á¤º¸¿¡ È°¿ëÇÔ
+	List* adjList;   // ì´ì¤‘ ì—°ê²° ë¦¬ìŠ¤íŠ¸ë¥¼ ê°„ì„  ì •ë³´ì— í™œìš©í•¨
 	int* visitInfo;
 } ALGraph;
 
